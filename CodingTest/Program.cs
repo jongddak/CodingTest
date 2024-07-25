@@ -32,7 +32,7 @@ namespace CodingTest
                 return answer;
             }
             //https://school.programmers.co.kr/learn/courses/30/lessons/120891
-            public int solution4(int order)
+            int solution4(int order)
             {
                 int answer = 0;
                 string x = order.ToString();
