@@ -30,11 +30,22 @@
             return answer;
         }
 
+        //https://school.programmers.co.kr/learn/courses/30/lessons/12925
+        //  int.Parse(s); 하면 한방에 끝날걸 문자열 쪼개서 배열에 넣고 아스키 코드 기준으로
+        //  뺀 뒤에 자릿수를 곱하려 했는데  너무 빙빙 돈듯함
+
+        public static int solution3(string s)
+        {
+            int answer = 0;
+            answer = int.Parse(s);
+            return answer;
+        }
+
 
 
         static void Main(string[] args)
         {
-            
+           
         }
     }
 }
