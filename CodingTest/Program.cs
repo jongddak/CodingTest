@@ -3,13 +3,7 @@ namespace CodingTest
 {
     internal class Program
     {
-      
-
-        static void Main(string[] args)
-        {
-           
-            Console.WriteLine("시작");
-            //202407025
+      //202407025
             //https://school.programmers.co.kr/learn/courses/30/lessons/120810?language=csharp
             int solution1(int num1, int num2)
             {
@@ -45,6 +39,12 @@ namespace CodingTest
                 return answer;
             }
 
+        static void Main(string[] args)
+        {
+           
+            Console.WriteLine("시작");
+            
+            
 
 
 
