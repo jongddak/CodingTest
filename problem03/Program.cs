@@ -290,6 +290,7 @@ namespace problem03
         }
 
         //https://school.programmers.co.kr/learn/courses/30/lessons/120808
+        //분수의 덧셈은 쉬웠지만 기약분수를 만들려면 최대공약수가 필요한데 이부분은 검색으로 해결함..
         public static int[] solution2(int numer1, int denom1, int numer2, int denom2)
         {
             int[] answer = new int[2];
@@ -340,13 +341,7 @@ namespace problem03
 
         static void Main(string[] args)
         {
-            //int[] nums = { 1, 1, 1, 1, 1 };
-
-            //int target = 3;
-
-            //int x = solution1(nums,target);
-            //Console.WriteLine(x);
-            Console.WriteLine(solution2(1, 4, 5, 4));
+            
 
         }
     }
