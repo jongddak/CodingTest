@@ -289,9 +289,41 @@ namespace problem03
             return answer;
         }
 
+        //https://school.programmers.co.kr/learn/courses/30/lessons/120808
+        public static int[] solution2(int numer1, int denom1, int numer2, int denom2)
+        {
+            int[] answer = new int[2];
+            if (denom2 == denom1)
+            {
+                answer[0] = numer1 + numer2;
+                answer[1] = denom1;
+            }
+            else 
+            {   
+                int nu = (numer1*denom2)+(numer2*denom1);
+                int de = denom2 * denom1;
+                answer[0] = nu;
+                answer[1] = de;
+            }
+            int x = gcd(answer[0], answer[1]);
+            answer[0] = answer[0]/x;
+            answer[1] = answer[1]/x;
+            return answer;
+        }
+        static int gcd(int a, int b)  // 유클리드 호제법을 이용한 최대 공약수 구하는 알고리즘 
+        {
+            int temp;
+            while (b != 0)
+            {
+                temp = a % b;
+                a = b;
+                b = temp;
+            }
+            return a;
+        }
 
 
-        public static int solution2(int[] numbers, int target)
+        public static int solution3(int[] numbers, int target)
         {
             int answer = 0;
             int sum = 0;
@@ -314,7 +346,7 @@ namespace problem03
 
             //int x = solution1(nums,target);
             //Console.WriteLine(x);
-
+            Console.WriteLine(solution2(1, 4, 5, 4));
 
         }
     }
