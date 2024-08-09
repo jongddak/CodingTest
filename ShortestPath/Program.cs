@@ -31,15 +31,15 @@
             {
                 (curPositionX, curPositionY) = q.Dequeue();
 
-                for (int i = curPositionX; i < curPositionX + 2; i++)
+                for (int i = curPositionX-1; i < curPositionX+2; i++)  //주변 9칸 탐색 , 인덱스를 범위를 벗어나버리는 문제....
                 {
-                    for (int j = curPositionY; j < curPositionY + 2; j++)
+                    for (int j = curPositionY-1; j < curPositionY+2; j++)
                     {
-                        if (i >= 0 && j >= 0)
+                        if (i >= 0 && j >= 0) //맵 바깥이 아니고 
                         {
                             if (maps[i, j] == 1) // 벽이 아니고
                             {
-                                if (visited[i, j] == false)//방문하지 않았던 곳이면)
+                                if (visited[i, j] == false)//방문하지 않았던 곳이면
                                 {
                                     visited[i, j] = true;
                                     curPositionX = i;
