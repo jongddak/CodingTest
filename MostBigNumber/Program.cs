@@ -1,5 +1,6 @@
 ﻿namespace MostBigNumber
 {
+    //https://school.programmers.co.kr/learn/courses/30/lessons/120899?language=csharp
     internal class Program
     {
         public int[] solution(int[] array)
